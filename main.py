@@ -1,5 +1,3 @@
-from socket import socket
-
 import socketio as sio
 
 socket = sio.Client()
@@ -54,4 +52,10 @@ if __name__ == '__main__':
             'mensagem': msg
         }
         sendMessage(mensagem)
+
+        continuar=input('Continuar? ').lower()[0]
+        if continuar == 'n':
+            socket.disconnect()
+            break
+
     socket.wait()
