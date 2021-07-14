@@ -42,20 +42,3 @@ def sendMessage(mensagem):
     print()
     socket.emit('sendMessage', mensagem)
 
-if __name__ == '__main__':
-    socket.connect('http://localhost:3000')
-    while True:
-        usr = input('Digite seu nome:')
-        msg = input('Digite sua mensagem:')
-        mensagem={
-            'usuario': usr,
-            'mensagem': msg
-        }
-        sendMessage(mensagem)
-
-        continuar=input('Continuar? ').lower()[0]
-        if continuar == 'n':
-            socket.disconnect()
-            break
-
-    socket.wait()

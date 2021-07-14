@@ -9,5 +9,3 @@ socket = SocketIO(app, cors_allowed_origins='*')
 def index():
     return render_template('index.html')
 
-if __name__ == '__main__':
-    socket.run(app, debug=True)
