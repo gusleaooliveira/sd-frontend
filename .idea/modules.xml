@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/Documentos/Github/trabalho-sd/.idea/trabalho-sd.iml" filepath="$USER_HOME$/Documentos/Github/trabalho-sd/.idea/trabalho-sd.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/trabalho-sd-cliente.iml" filepath="$PROJECT_DIR$/.idea/trabalho-sd-cliente.iml" />
     </modules>
   </component>
