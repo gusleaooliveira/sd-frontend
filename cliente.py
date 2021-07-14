@@ -4,6 +4,9 @@ import terminal
 if __name__ == '__main__':
     opcao=input('Opção [j/c]: ').lower()[0]
 
+    if opcao == 'j':
+        web.socket.run(web.app, debug=True)
+
     if opcao == 'c':
         terminal.socket.connect('http://localhost:3000')
         while True:
@@ -21,5 +24,5 @@ if __name__ == '__main__':
                 break
         terminal.socket.wait()
 
-    if opcao == 'j':
-        web.socket.run(web.app, debug=True)
+    else:
+        print('Terminado!')
